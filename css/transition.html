@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.an {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+
+  transition: width 2s, height 4s;;
+  transition-delay: 2s;
+  transition-duration: 5s;
+  transition-property: ;
+  transition-timing-function:ease;
+
+  transition: width 2s, height 2s, transform 2s;
+
+}
+
+.an:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+
+
+.parent{
+	height:300px;
+    width:300px;
+    border: 1px solid black;
+    transform: translate(50px,100px); 
+    /* move to right and move to down */
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div class="parent">
+	<div class="an"></div>
+
+<div>
+
+
+</body>
+</html>
