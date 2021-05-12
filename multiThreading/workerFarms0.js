@@ -1,6 +1,8 @@
-//another alternative for threads is 'setImmediate(heavyTaskFunctionName)'
-// for example chopping array and calling recursively setImmediate
-//imeediatley it will be added to the event loop
+/**SET IMMEDIATE
+ * another alternative for threads is 'setImmediate(heavyTaskFunctionName)'
+ for example chopping array and calling recursively setImmediate
+imeediatley it will be added to the event loop
+*/
 
 /** BACKGROUND PROCESSESS
  * another one is 'backgorund processess' by forking the process which will increase cost, memory
