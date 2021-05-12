@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
-    "pg": "^7.14.0"
+    "pg": "^7.14.0",
+    "worker-farm": "^1.7.0"
   }
 }
