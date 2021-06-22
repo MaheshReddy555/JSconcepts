@@ -8,9 +8,9 @@ const path = require("path");
 //   res.sendFile("index.html");
 // });
 
-app.use("/", express.static(path.join(__dirname, "")));
+app.use("/", express.static(path.join(__dirname, "css")));
 app.use("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/test.html"));
+  res.sendFile(path.join(__dirname, "css/transition.html"));
 });
 
 app.listen(4200, () => {

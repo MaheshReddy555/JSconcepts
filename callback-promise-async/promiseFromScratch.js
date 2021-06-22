@@ -9,6 +9,7 @@ class CustomPromise {
   }
 
   resolver(value) {
+    console.log("3");
     this.state = "RESOLVED";
     this.value = value;
     this.thenCallbacks.forEach((callback) => {
@@ -17,6 +18,7 @@ class CustomPromise {
   }
 
   reject(value) {
+    console.log("4");
     this.state = "REJECTED";
     this.value = value;
     this.errorCallbacks.forEach((callback) => {
@@ -25,11 +27,13 @@ class CustomPromise {
   }
 
   then(callback) {
+    console.log("1");
     this.thenCallbacks.push(callback);
     return this;
   }
 
   catch(callback) {
+    console.log("2");
     this.errorCallbacks.push(callback);
     return this;
   }
